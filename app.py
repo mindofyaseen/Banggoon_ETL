@@ -16,7 +16,7 @@ st.title("📊 Product Analytics Dashboard")
 st.write("Here you can explore insights about product pricing, ratings, reviews and value. Enjoy the visuals and get a quick understanding of the dataset.")
 
 # Load Data
-df = pd.read_csv("cleaned_products_data.csv")
+df = pd.read_csv("cleane_products_data.csv")
 
 # Precomputations
 df['value_score'] = df['rating'] / np.log1p(df['price'])
